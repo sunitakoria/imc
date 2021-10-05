@@ -24,7 +24,7 @@ app.get('/', function (req, res) {
    res.sendFile(path.join(__dirname, 'build', 'index.html'));
  });
 app.post("/insert", (req, res) => {
-  console.log('hhhhhh');
+  console.log('rest',req);
   const bookName = req.body.setBookName;
   const bookReview = req.body.setIn;
   const setIn = req.body.setIn;
@@ -37,7 +37,6 @@ return false;
 }
 dataRes.push({id:dataRes.length,book_name:bookName,book_review:bookReview,book_in:setIn,book_out:setOut,book_date:dateBook
 });
-console.log('hhhhhh');
 
 fs.writeFileSync(dataJson,JSON.stringify(dataRes));
 });

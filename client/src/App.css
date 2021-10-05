@@ -5,9 +5,46 @@
 .form{
   display: inline-block;
   justify-content: center;
+  margin: 10px 10px 10px 10px;
 }
 
 .form input{
   width: 250px;
   margin: 10px;
+}
+.my-custom-scrollbar {
+position: relative;
+height: 500px;
+overflow: auto;
+}
+.table-wrapper-scroll-y {
+display: block;
+}
+#wrapper {
+  width: 235px;
+}
+
+table {
+  border: 1px solid black;
+  width: 100%;
+}
+
+th,
+td {
+  width: 100px;
+  border: 1px solid black;
+}
+ tr:nth-child(even) {
+            background-color: Lightgreen;
+        }
+
+thead>tr {
+  position: relative;
+  display: block;
+}
+
+tbody {
+  display: block;
+  height: 500px;
+  overflow: auto;
 }
